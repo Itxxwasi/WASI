@@ -1,7 +1,7 @@
 # -  /SuhailTechInfo/
 
 FROM quay.io/suhailtechinfo/suhail-v2
-RUN git clone https://github.com/Itxxwasi/Wasi /root/Itxxwasi
+RUN git clone https://github.com/Itxxwasi/Wasi/root/Itxxwasi
 WORKDIR /root/Itxxwasi/
 RUN npm install
 EXPOSE 8000
