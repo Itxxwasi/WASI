@@ -1,43 +1,3 @@
-/**
-
-//══════════════════════════════════════════════════════════════════════════════════════════════════════//
-//                                                                                                      //
-//                                ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ ＢＥＴＡ                                      //
-//                                                                                                      // 
-//                                         Ｖ：１．０．１                                                 // 
-//                                                                                                      // 
-//            ███████╗██╗   ██╗██╗  ██╗ █████╗ ██╗██╗         ███╗   ███╗██████╗                        //
-//            ██╔════╝██║   ██║██║  ██║██╔══██╗██║██║         ████╗ ████║██╔══██╗                       //
-//            ███████╗██║   ██║███████║███████║██║██║         ██╔████╔██║██║  ██║                       //
-//            ╚════██║██║   ██║██╔══██║██╔══██║██║██║         ██║╚██╔╝██║██║  ██║                       //
-//            ███████║╚██████╔╝██║  ██║██║  ██║██║███████╗    ██║ ╚═╝ ██║██████╔╝                       //
-//            ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝     ╚═╝╚═════╝                        //
-//                                                                                                      //
-//                                                                                                      //
-//                                                                                                      //
-//══════════════════════════════════════════════════════════════════════════════════════════════════════//
-
-CURRENTLY RUNNING ON BETA VERSION!!
-*
-   * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
-   * @youtube : https://www.youtube.com/c/@SuhailTechInfo
-   * @description : Suhail-Md ,A Multi-functional whatsapp user bot.
-   * @version 1.2.7
-*
-   * Licensed under the  GPL-3.0 License;
-* 
-   * Created By Suhail Tech Info.
-   * © 2023 Suhail-Md.
-* 
-   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-   * SOFTWARE.
- **/
 
 
 const moment = require('moment-timezone')
@@ -80,7 +40,7 @@ async(message, match) => {
  try{
 
    message.react("🔍")
-         if (!match) return message.reply(`Give me a user name like ${prefix}github SuhailTechInfo`)
+         if (!match) return message.reply(`Give me a user name like ${prefix}github Itxxwasi`)
 
          const { data } = await axios(`https://api.github.com/users/${match}`)
    if(!data) return await message.send(`*_Didn't get any results, Provide valid user name!_*`)
@@ -136,7 +96,7 @@ async(m) => {
 smd({pattern: 'lyrics', alias :['lyric'],category: "search", desc: "Searche lyrics of given song name",use: '<text | song>',filename: __filename,},
 
     async(message, text,{cmdName}) => {
-    if (!text) return message.reply(`*_Uhh please, give me song name_*\n*_Example ${prefix+cmdName} blue eyes punjabi_*`);
+    if (!text) return message.reply(`*_Uhh please, give me song name_*\n*_Example ${prefix+cmdName}  lajwabb by wasi_*`);
     try {
       const res = await ( await fetch(`https://inrl-web.onrender.com/api/lyrics?text=${text}`) ).json();
       if(!res.status) return message.send("*Please Provide valid name!!!*");
@@ -314,7 +274,7 @@ smd({
         },
         async(message, text) => {
           try{
-            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google Suhail Md._*`);
+            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google Itxxwasi GitHub._*`);
             let google = require('google-it');
             google({ 'query': text}).then(res => {
                 let msg= `Google Search From : ${text} \n\n`;
@@ -335,7 +295,7 @@ smd({
     //---------------------------------------------------------------------------
 smd({
             pattern: "image",
-            alias: ["img" , "pic"],
+            alias: ["img" , "wasi"],
             category: "search",
             desc: "Searches Image on Google",
             use: '<text>',
